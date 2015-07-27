@@ -1,11 +1,9 @@
 \documentclass[a4paper]{article}
 \author{Nishant Gupta}
 \usepackage{array}
-\usepackage{helvet}
 \usepackage[margin=2cm]{geometry}
 \usepackage{longtable}
 \usepackage{lmodern}
-\usepackage{wrapfig}
 \usepackage[super]{nth}
 \begin{document}
 \fontfamily{phv}
@@ -19,18 +17,31 @@ Computer Science and Engineering \hfill ${nishgu@iitk.ac.in}$ \newline
 IIT Kanpur \hfill  {7275726006} \\ \\
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
 
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+
+\makeatletter
+\newcommand{\thinhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 0.2pt
+    \futurelet \reserved@a \@xhline
+}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Main Content  %%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{center}
   \begin{tabular}{|c|c|c|c|} 
-    \hline
+    \thinhline
     {\centering Year} & {\centering Degree} & {\centering Institute} & {\centering CPI} \\  
-    \hline
-    2017 (expected) & {B.Tech, Computer Science} & IIT Kanpur  & 9.2/10.0  \\ 
-    % \hline
-    2013 & HSCE & Shivpuri Public School,Ashoknagar & 			93.60\%	\\
-    % \hline
+    \thinhline
+    2017 (expected) & {B.Tech,  Computer Science} & IIT Kanpur  & 9.2/10.0  \\ 
+    \thinhline
+    2013 & {HSCE} & Shivpuri Public School,Ashoknagar & 			93.60\%	\\
+    \thinhline
     2011 & AISSCE & Tara Sadan School,Ashoknagar  & 9.6/10.0   \\
-    \hline
+    \thinhline
 
   \end{tabular}
 \end{center}
@@ -70,7 +81,7 @@ IIT Kanpur \hfill  {7275726006} \\ \\
                                                       inferences using Various clustering algorithms. 
                                                     \end{itemize}
                                                   \item
-                                                    Contributed to front-end of Website for AlumniContact \hfill Apr'14-Jul'14  \newline 
+                                                    Worked on front-end of Website for AlumniContact \hfill Apr'14-Jul'14  \newline 
                                                     Programme, IIT Kanpur.
                                                   \end{itemize}
   \\ \\
@@ -99,6 +110,14 @@ IIT Kanpur \hfill  {7275726006} \\ \\
                                  \end{itemize}
                                \end{itemize}
   \\ \\
+
+   \textrm{\textsc{Relevant Coursework}} &  
+                                        \begin{tabular}{p{50mm} p{50mm}} 
+                                          2017 (expected) & {B.Tech,  Computer Science}  \\ 
+                                          2013 & {HSCE} 	\\
+                                          2011 & AISSCE  \\
+                                        \end{tabular}
+\\ \\
   \textrm{\textsc{Technical Skills}} & 
                                        {\sl Development Environment :} Gentoo - Xmonad,i3 \newline
                                        {\sl Languages :} C/C++,Haskell,Scala,Python,Bash,JS,Dart.\newline
