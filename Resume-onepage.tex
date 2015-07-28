@@ -1,0 +1,158 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                   Name : Resume-onepage.tex                            %
+%                    Author : Nishant Gupta                              %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Preamble %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper]{article}
+\author{Nishant Gupta}
+\usepackage{array}
+\usepackage[margin=2cm]{geometry}
+\usepackage{longtable}
+\usepackage{lmodern}
+\usepackage[super]{nth}
+\begin{document}
+\makeatletter
+\newcommand{\thickhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 1pt
+    \futurelet \reserved@a \@xhline
+}
+
+\makeatletter
+\newcommand{\thinhline}{%
+    \noalign {\ifnum 0=`}\fi \hrule height 0.2pt
+    \futurelet \reserved@a \@xhline
+}
+\fontfamily{phv}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Name and Address %%%%%%%%%%%%%%%%%%%%%%%%% 
+\section*{\textbf\Huge Nishant Gupta}
+\hrule
+\vspace{2mm}
+Third Year Student  \hfill {I-307/5,IIT Kanpur} \newline
+Computer Science and Engineering \hfill ${nishgu@iitk.ac.in}$ \newline
+IIT Kanpur \hfill  {7275726006} 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Grade Sheet %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+  \begin{tabular}{|c|c|c|c|} 
+    \thinhline
+    {\centering Year} & {\centering Degree} & {\centering Institute} & {\centering CPI} \\  
+    \thinhline
+    2017 (expected) & {B.Tech,  Computer Science} & IIT Kanpur  & 9.2/10.0  \\ 
+    \thinhline
+    2013 & {HSCE} & Shivpuri Public School,Ashoknagar & 			93.60\%	\\
+    \thinhline
+    2011 & AISSCE & Tara Sadan School,Ashoknagar  & 9.6/10.0   \\
+    \thinhline
+  \end{tabular}
+\end{center}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\vspace{-2em}
+\centering
+%\renewcommand{\arraystretch}{0.1}
+\begin{longtable}{@{}m{3.0cm}m{14cm}@{}}
+
+%%%%%%%%%%%%%%%%%%%%%%% Scholastic Achievements  %%%%%%%%%%%%%%%%%%%%%%%%%%
+  \textrm{\textsc {Scholastic Achievements}} & 
+                                               \begin{itemize} \itemsep -2pt
+                                               \item
+                                                 Awarded Academic Excellence Award (IITK) given to top 5\% students on the basis of academic performance.
+                                               \item
+                                                 Secured AIR-248 out of 0.15 million students in JEE-Advanced 2013.
+                                               \item
+                                                 Qualified Regional Mathematical Olympiad(Rajasthan Region).
+                                               \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%% Interships and Experiences %%%%%%%%%%%%%%%%%%%%%%
+  \textrm{\textsc{Internships and Experiences}} &
+                                                  \vspace{-2mm}
+                                                  \begin{itemize} 
+                                                  \item 
+                                                    Altisource Business Solutions - Technology Intern \hfill  May'15-Jul'15
+                                                    \begin{itemize} \itemsep -2pt
+                                                    \item Worked on the projects ``Actor Equivalence and Identity Stitching'' and ``Event Data Clustering''
+                                                      for the company's consumer analytics product `Pointilist'
+                                                    \item Designed an algorithm for solving the actor equivalence problem (Established a relation between
+                                                      actors and streaming events) for single/ Multiple platforms
+                                                    \item Quantified various real life consumer attributes and clustered them to arrive at meaningful
+                                                      inferences using Various clustering algorithms. 
+                                                    \end{itemize}
+                                                  \item
+                                                    Worked on front-end of Website for AlumniContact \hfill Apr'14-Jul'14  \newline 
+                                                    Programme, IIT Kanpur.
+                                                  \end{itemize} \vspace*{-\baselineskip}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Projects  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \textrm{\textsc{Projects}} &
+                               \vspace{-5mm}
+                               \begin{itemize} \itemsep -2pt
+                               \item
+                                 Sentiment Analysis of Social Media - {\footnotesize Takneek'14 }   \hfill Aug'14
+                                 \vspace{-2mm}\begin{itemize} \itemsep -2pt
+                                 \item Application developed during Web-Dev, Takneek'14 and secured \nth{1} position.
+                                 \item Provided an interface to analyse the past and present social sentiment of brands and their products.
+                                 \item  Identify `good' and `bad' features of the product and suggest weak points to improve it.
+                                 \end{itemize}
+                               \item
+                                 Image Trianglization - {\footnotesize Programming Club, IIT Kanpur }                  \hfill May'14-Jul'14
+                                 \vspace{-2mm}\begin{itemize}  \itemsep -2pt
+                                 \item Renders image using only triangles and gives the sense of image.
+                                 \item Basic GUI using Tkinter and webcam support.
+                                 \item Uses Delaunay Triangulation so that image is aesthetically pleasing.
+                                 \item Uses OpenCV for Image Processing and Manipulation.
+                                 \end{itemize}
+                               \item
+                                 News Map - {\footnotesize ACA, IIT Kanpur }                               \hfill Feb'14-Apr'14
+                                 \vspace{-2mm}\begin{itemize} \itemsep -2pt
+                                 \item A webapp that plots news on a world map.
+                                 \item Uses Various APIs for location resolution, news fetching and map plotting.
+                                 \end{itemize}
+                               \end{itemize}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%% Relevant Coursework %%%%%%%%%%%%%%%%%%%%%%%%%%%
+   \textrm{\textsc{Relevant Coursework}} &  
+                                        \begin{tabular}{p{69mm} p{60mm}} 
+                                          CS210 - Data Structures and Algorithms(A*) & CS201 - Discrete Mathematics(A)  \\
+                                          CS345 - Algorithms II(Ongoing)             & MSO201 - Probability and Statistics(A) \\
+                                          CS653 -Functional Programming(Ongoing) \\
+                                        \end{tabular}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\\\\ 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Technical Skills %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+  \textrm{\textsc{Technical Skills}} & 
+                                       {\sl Development Environment :} Gentoo,
+                                       Arch - Xmonad, i3 \newline
+                                       {\sl Languages :} C/C++, Haskell, Scala,
+                                       Python, Bash, JS, Dart.\newline
+                                       {\sl Other :} git, Angular, Android App
+                                       Development, html, SQL,css/scss.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\\\\
+
+%%%%%%%%%%%%%%%%%%%%% Position Of Responsibility  %%%%%%%%%%%%%%%%%%%%%%%%%
+  \textrm{\textsc{Positions Of Responsibility}} &
+                                                  Seceretary of Programming Club, IIT Kanpur. \hfill 2014-2015
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+ \\
+\end{longtable}
+\end{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Resume Ends  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
