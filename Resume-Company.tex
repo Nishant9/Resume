@@ -1,4 +1,4 @@
-\documentclass[a4paper,10pt]{article}
+\documentclass[a4paper,9pt]{extarticle}
 % -----------------------------------------------------------
 \usepackage[top=0.55in, left=0.45in, right=0.75in]{geometry}
 \usepackage{graphicx}
@@ -6,6 +6,7 @@
 \usepackage[super]{nth}
 \usepackage{palatino}
 \usepackage{tabularx}
+\usepackage{hyperref}
 \fontfamily{SansSerif}
 \selectfont
 \usepackage[T1]{fontenc}
@@ -17,12 +18,14 @@
 \definecolor{mygrey}{gray}{0.75}
 \textheight=10in
 \raggedbottom
+%\def\labelitemi{\scriptsize$\blacksquare$}
 
 \setlength{\tabcolsep}{0in}
 \newcommand{\isep}{-2 pt}
 \newcommand{\lsep}{-0.5cm}
 \newcommand{\psep}{-0.6cm}
 \renewcommand{\labelitemii}{$\circ$}
+\renewcommand{\labelitemiii}{$\circ$}
 
 \pagestyle{empty}
 % -----------------------------------------------------------
@@ -36,10 +39,11 @@
 % -----------------------------------------------------------
 
 \begin{document}
+%\renewcommand{\labelitemii}{$\blacksquare$}
 \hspace{0.5cm}\\[-0.2cm]
 % \vspace{-5mm}
 {\huge Nishant Gupta}\vspace{-1mm} \hrule \vspace{2mm}
-\indent Third Year Student,  \hfill {I-307/5,IIT Kanpur}  \\
+\indent Final Year Student,  \hfill \textit{Github/Bitbucket} : \texttt{Nishant9}  \\
 \indent Computer Science and Engineering, \hfill Email-id : \textit{nishgu@iitk.ac.in}  \\
 \indent IIT Kanpur \hfill Mobile No.: \textit{7275726006} \\
 \vspace{-1mm}
@@ -49,8 +53,8 @@
 \begin{center}
   
   \indent \begin{tabular}{ l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l @{\hskip 0.15in} l }
-            \textbf{Year}  & \textbf{Examination} & \textbf{Institute} & \textbf{CPI/\%} \\
-            2017 (expected) & {B.Tech,  Computer Science} & IIT Kanpur  & 9.2/10.0  \\ 
+            \textbf{Year}  & \textbf{Degree} & \textbf{Institute} & \textbf{CPI/\%} \\
+            2017 (expected) & {Bachelor of Technology} & IIT Kanpur  & 9.4/10.0  \\ 
             2013 & {HSCE} & Shivpuri Public School,Ashoknagar & 			93.60\%	\\
             2011 & AISSCE & Tara Sadan School,Ashoknagar  & 9.6/10.0   \\
           \end{tabular}
@@ -61,21 +65,65 @@
         \begin{itemize} \itemsep -2pt
         \item Awarded \textbf{Academic Excellence Award} (IITK) given to top 5\% students on the basis of academic performance.
         \item Secured \textbf{AIR-248} out of 0.15 million shortlisted  students in JEE-Advanced 2013.
-        \item Qualified \textbf{Regional Mathematical Olympiad}(Rajasthan Region).
+        \item Qualified \textbf{Regional Mathematical Olympiad}(Rajasthan
+          Region) that selects only 40 students from Rajasthan.
         \item Selected for the \textbf{KVPY} (Kishore Vaigyanik Protsahan Yojana) in 2013.
         \end{itemize}
 
         \resheading{\textbf{TECHNICAL SKILLS} }\\[\lsep]
         \vspace{1mm}
         \begin{itemize} \itemsep -3pt
-        \item \noindent \textbf{Development Environment} Gentoo, ArchLinux - XMonad, i3.    \textbf{Database} (MySQL)
-        \item \noindent \textbf{Languages} (C, C++, Java, dart, Javascript, Haskell, Scala, x86 Assembly(AT\&T Syntax)), \textbf{Script} (Python, Shell), 
-        \item\textbf{Tools} (git, Angular, Android App Development, sbt, gradle, cabal, css/scss, akka).
+        \item \noindent \textbf{Languages :} C/C++, Python, R, Haskell,
+          Javascript, Scala, x86 Assembly, Perl
+        \item \noindent \textbf{Operating Systems :} Linux(Gentoo, ArchLinux,
+          NixOS), Windows
+        \item\textbf{Frameworks/Libraries :} django, OpenCV, Parsec,
+          data.table, dplyr, ggglot, cabal, Angular, spark
+        \item\textbf{Softwares :} Emacs, Vim, AndroidStudio, IntelliJ Idea,
+          RStudio
+        \item\textbf{Others :} git, svn, ElasticSearch, \LaTeX, css/scss, SQL, HTML, Bash
         \end{itemize}
 
-        \resheading{\textbf{INTERNSHIPS} }\\[\lsep]
-        \vspace{1mm}\begin{itemize}
-        \item \textbf{  Altisource Business Solutions}(Technology Intern) \hfill  \textit{May'15-Jul'15}
+        \resheading{\textbf{AREAS OF INTEREST} }\\[\lsep]
+        \vspace{3mm}\\
+        \indent Functional Programming, Machine Learning, Computer Networks, Operating
+        Systems, Graph Theory, \\
+        \indent Optimisation, Algorithms, Theory of Computation
+        \vspace{1mm}
+        
+        \resheading{\textbf{PROFESSIONAL EXPERIENCE} }\\[\lsep]
+        \vspace{1.2mm}\begin{itemize} \itemsep -2pt
+        \item \textbf{Goldman Sachs}( Summer Employee) \hfill
+          \textit{May'16-Jul'16(10 weeks)}
+          \vspace{-2mm}\begin{itemize} \itemsep -1pt
+          \item \textbf{Job Failure analytics}
+          \vspace{-1.2mm}\begin{itemize} \itemsep -1pt
+            \item Improvised Job Failure prediction model and automated the
+              crucial task of structured analytics.
+            \item Proposed and tested root cause detection model which leverages
+              micro and macro failure patterns to detect probable failure causes
+              and sends recommendation to concerned teams.
+            \end{itemize}
+          \item \textbf{ETA and SLA Breach prediction model}
+          \vspace{-1mm}\begin{itemize} \itemsep -2pt
+            \item Transformed ETA and SLA prediction model to account for more
+              complex dependencies.
+            \item Fabricated and partially implemented a dynamic model which
+              \begin{itemize}
+              \item Can dynamically incorporate Job failure model to alter the
+                prediction.
+              \item Changes prediction throughout the day in reaction to various
+                jobs and telemetries.
+              \item In manual testing, exhibited twice the recall and a slight
+                increase in precision
+              \end{itemize}
+            \end{itemize}
+          \item Rewrote the entire data ingestion pipeline for both models which now
+            accounts for 90 percent of jobs compared to 60 percent in earlier
+            pipeline and with 40 percent more efficiency.
+          \end{itemize}
+        \item \textbf{  Altisource Business Solutions}( Technology Intern) \hfill
+          \textit{May'15-Jul'15(8 weeks)}
           \vspace{-2mm}\begin{itemize} \itemsep -2pt
           \item Worked on the projects \textbf{Actor Equivalence and Identity Stitching} and \textbf{Event Data Clustering} for the company's consumer analytics product `Pointilist'
           \item Designed an algorithm for solving the actor equivalence problem (Established a relation between actors and streaming events) for single Multiple platforms.
@@ -83,8 +131,77 @@
           \end{itemize}
         \end{itemize}
 
-        \vspace{-1mm}\resheading{\textbf{KEY PROJECTS} }\\[\lsep]\vspace{1mm}
+        \vspace{-1mm}\resheading{\textbf{WORK EXPERIENCE} }\\[\lsep]\vspace{1mm}
         \begin{itemize} \itemsep -1mm 
+        \item \textbf{Hscraper} - \textit{github:}
+          \href{http://www.github.com/Nishant9/Hscraper}{\texttt{Nishant9/Hscraper}}, 
+          \textit{hackage:}
+          \href{https://hackage.haskell.org/package/hScraper}{\texttt{Hscraper}}
+          \\ - \textit{Mentor: Prof. Piyush P Kuroor} \hfill \textit{Aug'15-Dec'16}
+          \vspace{-2mm}\begin{itemize} \itemsep -2pt
+          \item \textbf{Haskell} library to scrape and crawl webpages.
+          \item Includes an HTML Parser and a
+            basic query language parser, both written using \textbf{Parsec}. 
+          \item Query language supports contiguous filters with optional
+            attribute matching.
+          \item HTML Parser parses correct HTML by itself and has tidyhtml
+            bindings to correct malformed html.
+          \item Includes a Network module that is a wrapper around
+            \textbf{http-conduit} to allow for bulk requests with varying
+            parameters and responses.
+          \item Current maintainer of library on hackage.
+          \end{itemize}
+          \newpage
+        \item \textbf{Object detection and Multiclass classification of Video
+            Surveillance feed} \\ - \textit{Mentor: Prof. Harish Karnick} \hfill \textit{Jan'16-Apr'16}
+          \vspace{-2mm}\begin{itemize} \itemsep -2pt
+          \item Achieved greater than 95 percent accuracy and precision  using
+            Convolutional neural networks for feature extraction and SVM for classification 
+          \item Used VGG-16 caffe model and python implementation of Faster R-CNN paper published in
+            NIPS 2015
+          \item Takes around 1sec/frame on a laptop GPU(Nvidia GTX-755M)
+          \item Also Tried various combinations of tradional approaches for
+            feature extraction from images.
+            Some of them are :
+            \begin{itemize}
+          \item Mixture of Gaussians from OpenCV for ROI extraction and own
+            implementation of Non-maximum Suppression for refinement of ROI
+          \item Experimented with different feature representations of ROI like
+            HSV, HoG and SIFT for training the classifiers.
+          \item Achieved greater than 85 percent accuracy and greater than 80
+            percent precision using Linear SVM as classifier and HoG feature
+            representation with other refinements.
+            \end{itemize}
+          \end{itemize}
+          
+        \item \textbf{Scala Complier} - \textit{github:}
+          \href{http://www.github.com/Nishant9/scalaCompiler}{\texttt{Nishant9/scalaCompiler}}
+          \\ - \textit{Mentor: Prof. Subhajit Roy} \hfill \textit{Jan'16-Apr'16}
+          \vspace{-2mm}\begin{itemize} \itemsep -2pt
+          \item Implemented Scala to X86(AT\&T Syntax) in python using
+            ply(Python lex yacc)
+          \item Supports basic data types, loops, switch statements,
+            conditionals, n dimensional arrays, nested functions, recursion
+          \item Implements dynamic scoping, type checking and basic type inference  
+          \end{itemize}
+          
+        \item \textbf{Code Cloud} - \textit{github:} \href{http://www.github.com/Nishant9/ccloud}{\texttt{Nishant9/ccloud}} 
+          \\ - \textit{Mentor: Prof. Sumit Ganguly} \hfill \textit{Jan'16-Apr'16}
+          \vspace{-2mm}\begin{itemize} \itemsep -2pt
+          \item Code management website mainly focused on Competitve programming
+          \item Uses django for backend, bootstrap3 for frontend and sqlite for database
+          \item Allows public and private code sharing, is fully mobile
+            compliant, implements basic search functionality.  
+          \end{itemize}
+          
+        \item \textbf{NachOS extension} - \textit{Under Prof. Mainak Chaudhari} \hfill \textit{Aug'15-Dec'15}
+          \vspace{-2mm}\begin{itemize} \itemsep -2pt
+          \item  Implemented system calls pertaining to Fork, Exec, Join, Yield, Sleep and Exit for NachOS (a rudimentary OS)
+          \item Programmed different signal handling methods, process scheduling and page replacement algorithms and evaluated
+            their relative performance
+          \item Implemented and tested various synchronization primitives like
+            mutex and semaphores
+          \end{itemize}
         \item \textbf{Online Web Platform} - \textit{Under Prof. Manindra Agarwal} \hfill \textit{Nov'14-Present}
           \vspace{-2mm}\begin{itemize} \itemsep -2pt
           \item Implemented Google Drive Integration and various small features for a web platform that uses \textbf{Dart} on front-end and \textbf{Scala} on back-end. 
@@ -116,15 +233,19 @@
         \begin{itemize}
         \item[]
           \begin{tabular}{p{69mm}@{\hskip 0.25in} p{80mm}} 
+            CS330 - Operating Systems(\textbf{A*}) & CS340 - Theory of Computation(\textbf{A*})  \\
+            CS345 - Algorithms II(\textbf{A}) & CS335 - Compiler Design(\textbf{A})  \\
+            CS653 - Functional Programming(\textbf{A}) & CS771 - Machine learning(\textbf{A})  \\
+            CS252 - Computing Laboratory - II(\textbf{A*}) & CS251 - Computing Laboratory - I(\textbf{A})  \\
             CS210 - Data Structures and Algorithms(\textbf{A*}) & CS201 - Discrete Mathematics(\textbf{A})  \\
-            CS345 - Algorithms II(*)             & MSO201 - Probability and Statistics(\textbf{A}) \\
-            CS653 -Functional Programming(*)  & \hfill * - Ongoing
+            CS345 - Software Engineering(\#)             & MSO201 - Probability and Statistics(\textbf{A}) \\
+            CS653 - Computer Networks(\#)  & \hfill \# - Ongoing
           \end{tabular}
 
         \end{itemize}
 
         \vspace{-1mm}
-        \resheading{\textbf{POSITIONS OF RESPONSIBILITY} }\\[\lsep] \vspace{1mm}
+        \resheading{\textbf{MISCELLANEOUS} }\\[\lsep] \vspace{1mm}
         \begin{itemize} \itemsep -2pt
         \item \textit{Seceretary} of Programming Club, IIT Kanpur. \hfill \textit{2014-2015}
           \vspace{-2mm}\begin{itemize}

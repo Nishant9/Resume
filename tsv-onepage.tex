@@ -1,0 +1,286 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+% 
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+% 
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+% 
+% License:
+% The MIT License (see included LICENSE file)
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 
+
+% ----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% ----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{multicol}
+\usepackage{nth}
+% \usepackage{fontspec}
+%\usepackage{fontawesome}
+% ----------------------------------------------------------------------------------------
+% PERSONAL INFORMATION
+% ----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Nishant Gupta} % Your name
+\cvjobtitle{CSE, IIT Kanpur} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{} % Short address/location, use \newline if more than 1 line is required
+
+\cvnumberphone{+91 7275726006} % Phone number
+\cvsite{} % Personal website
+\cvmail{nishant@cse.iitk.ac.in} % Email address
+
+% ----------------------------------------------------------------------------------------
+
+\begin{document}
+
+% ----------------------------------------------------------------------------------------
+% ABOUT ME
+% ----------------------------------------------------------------------------------------
+
+\aboutme{
+  \vspace{-2mm}
+  \textbf{B. Tech, CPI - 9.4/10} \hfill \textbf{May 2017} \\
+  CSE, IIT Kanpur \\
+  \vspace{2mm}
+  \textbf{HSCE (+2), \space 93.6\%} \hfill \textbf{April 2013}\\  
+  Shivpuri Public School \\
+  \vspace{2mm}
+  \textbf{AISSCE, 9.6/10}\hfill \textbf{April 2011} \\
+  Tara Sadan School \\
+}
+
+\Achieve{
+  \vspace{-4mm}
+  % \subsection{Competitions}
+	\begin{itemize}[leftmargin=*]
+  \item JEE 2013 - AIR 248 out of 0.15 Million shortlists(1.3 million total)
+  \vspace{-2mm}
+  \item Awarded Academic Excellence Award (IITK) given to top 5\% students on the basis of academic performance.
+  \end{itemize}
+
+}
+% ----------------------------------------------------------------------------------------
+% SKILLS
+% ----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\tool{
+  \vspace{-2mm}
+  \subsection{Languages}
+  \vspace{-2mm}
+  Python, C/C++, Haskell, Agda, R, Bash, Javascript, Scala, Perl, x86 Assembly
+  \vspace{-2mm}
+  \subsection{Frameworks/Libraries}
+  \vspace{-2mm}
+  django, OpenCV, Parsec,
+  data.table, dplyr, gglot, cabal, Angular, spark
+  \vspace{-2mm}
+  \subsection{Operating Systems} 
+  \vspace{-2mm}
+  Linux(Gentoo, ArchLinux, NixOS, ubuntu), FreeBSD
+  \vspace{-2mm}
+  \subsection{Others} 
+  \vspace{-2mm}
+  Emacs, Vim, Git, svn, ElasticSearch, \LaTeX, css/scss, SQL, HTML, nix
+
+}
+
+\tutor{
+  \vspace{-3mm}
+  Computer Networks, Machine Learning, Compiler Design,
+  Functional Programming, Databases, Programming Languages,
+  Software Architecture, Operating Systems,
+}
+
+
+\extra{
+  \vspace{-2mm}
+  % \subsection{Competitions}
+	\begin{itemize}[leftmargin=*]
+  \item {\large Sentiment Analysis of Social Media}, \hfill Aug'14\\
+    Won \nth{1} prize in Web-Dev, a webapp development competition in Takneek'14.
+  \item {\large Secretary},\\
+    Programming Club \hfill 2014-2015 
+  \end{itemize}
+
+
+}
+
+% ------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+
+
+% ----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+% ----------------------------------------------------------------------------------------
+% INTERESTS
+% ----------------------------------------------------------------------------------------
+\vspace{-2mm}
+\section{Professional Experience}
+\vspace{-2mm}
+
+\subsection{\textbf{Goldman Sachs}}
+\vspace{-2mm}
+Intern, Bangalore \hfill \emph{May `16-July'16(10 weeks)}\\
+\vspace{-4mm}\begin{list3}
+\item \textbf{Job Failure analytics}
+  \begin{list3}
+  \item Improvised Job Failure prediction model and automated the
+    crucial task of structured analytics.
+  \item Proposed and tested root cause detection model which leverages
+    micro and macro failure patterns to detect probable failure causes
+    and sends recommendation to concerned teams.
+  \end{list3}
+  \item \textbf{ETA and SLA Breach prediction model}
+  \begin{list3}
+  \item Transformed ETA and SLA prediction model to account for more
+    complex dependencies.
+  \item Fabricated and partially implemented a dynamic model which
+    \begin{list3}
+    \item Can dynamically incorporate Job failure model to alter the
+      prediction.
+    \item Changes prediction dynamically in reaction to various
+      jobs and telemetries.
+    \item In manual testing, exhibited twice the recall and a slight
+      increase in precision
+    \end{list3}
+  \end{list3}
+\item Rewrote the entire data ingestion pipeline for both models which now
+  accounts for 90 percent of jobs compared to 60 percent in earlier
+  pipeline and with 40 percent more efficiency.
+  \newline
+  \newline
+\end{list3}
+
+\subsection{ \textbf{Altisource Business Solutions} }
+\vspace{-2mm}
+Intern, Bangalore \hfill \emph{May `15-July'15(8 weeks)}\\
+\vspace{-3mm}
+\begin{list3}
+\item Worked on the projects \textbf{Actor Equivalence and Identity Stitching} and \textbf{Event Data Clustering} for the company's consumer analytics product `Pointilist'
+\item Designed an algorithm for solving the actor equivalence problem (Established a relation between actors and streaming events) for single Multiple platforms.
+\item Built a generic framework that takes varying Consumer data from different tenants and Processes, normalizes and Clusters it to derive meaningful inferences.
+  \newline
+  \newline
+  \newline
+\end{list3} 
+
+\vspace{-2mm}
+\section{Selected Projects}
+\subsection{ \textbf{[Operating Systems/IOT] Multimedia Live Chat on Tizen architecture  }}
+\vspace{-2mm}
+Samsung Research team \hfill \emph{Jan `16 - Apr `16}
+\begin{list3}
+\item Designed and Implemented a Gstreamer pipeline
+  (UDP/RTP of mpeg2ts format)
+\item Pipeline Recorded and muxed audio and video to make the rtp payload
+\item Reciever pipeline would demux and play/display real time and in-sync audio/video \\
+  \newline
+  \newline
+\end{list3}
+\vspace{-3mm}
+\subsection{\textbf{[Automated Theorem-Proving] Points-to analysis in almost linear time}}
+\vspace{-2mm}
+Prof. Subhajit Roy, Assistant Professor, IIT Kanpur    \hfill \emph{Aug `15 -  ongoing} 
+\begin{list3}
+\item Aim - To prove soundness of type system described in the paper- Points-to \\ analysis in almost linear time by Bjarne Steensgaard via dependently typed code.
+\item Modeled Correspondence of 2 storage shape graphs for the type System in AGDA.
+\item We Made a tutorial on AGDA - \textsl{\href{https://goo.gl/G2bK7q}{goo.gl/G2bK7q}} \\
+  \newline
+  \newline
+\end{list3}
+\vspace{-3mm}
+\subsection{\textbf{[Computer System Security] Analysis and fixing of Zoobar web server}}
+\vspace{-2mm}
+Prof. Sandeep Shukla, Professor, IIT Kanpur    \hfill \emph{Jan `16 -  Apr `16} 
+\begin{list3}
+\item Analyzed the architecture of the zoobar web server (A model of OKWS web server, specialized for building fast and secure web services) for security Vulnerabilitites
+\item Improved security using Privilege Separation and Server-Side Sandboxing  
+\item Used Z3(Microsoft) for symbolic execution and analysis of the web server  \\
+  \newline
+  \newline
+\end{list3}
+\vspace{-3mm}
+\subsection{\textbf{[Computer Graphics]  Animation Video}}
+\vspace{-2mm}
+\textsl{Prof. Vinay P. Namboodari, Assistant Professor, IIT Kanpur   } \hfill \emph{Oct `15}
+\begin{list3}
+\item Rendered 3-minute animation clip using OpenGL with audio video sync
+\item Implemented Keyframe animation, DeBoor`s B-Spline and Texture Mapping  \\
+  \newline
+  \newline
+\end{list3}
+\vspace{-2mm}
+\section{Other Projects} \\
+{$\ $} \vspace{-2mm} \\
+\begin{twentyshort} % Environment for a short list with no descriptions
+  \twentyitemshort{Compilers}{\qquad For scala in Python}
+  \twentyitemshort{Operating Systems}{\qquad Development of NachOS}
+  \twentyitemshort{Computer Architecture}{\qquad Dynamic Indexing into last-level caches} 
+
+  \vspace{-0.27cm}   
+	% \twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+% \vspace{-3mm}
+
+% ----------------------------------------------------------------------------------------
+% EDUCATION
+% ----------------------------------------------------------------------------------------
+
+
+% ----------------------------------------------------------------------------------------
+% AWARDS
+% ----------------------------------------------------------------------------------------
+
+
+% ----------------------------------------------------------------------------------------
+% EXPERIENCE
+% ----------------------------------------------------------------------------------------
+
+
+
+% ----------------------------------------------------------------------------------------
+% OTHER INFORMATION
+% ----------------------------------------------------------------------------------------
+
+
+
+% ----------------------------------------------------------------------------------------
+% SECOND PAGE EXAMPLE
+% ----------------------------------------------------------------------------------------
+
+% \newpage % Start a new page
+
+% \makeprofile % Print the sidebar
+
+% \section{other information}
+
+% \subsection{Review}
+
+% Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+% \section{other information}
+
+% \subsection{Review}
+
+% Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+% ----------------------------------------------------------------------------------------
+
+\end{document} 
