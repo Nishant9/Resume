@@ -142,13 +142,13 @@
 
 		% ------------------------------------------------
 
-		\profilesection{Education}{3.1cm}
+		\profilesection{Education}{3.0cm}
     
 		\begin{flushleft}
 			\aboutme
 		\end{flushleft}
 
-		\profilesection{Awards and }{0cm}\\
+%		\profilesection{Awards and }{0cm}\\
     \profilesection{ Achievements}{1.67cm}
     
 		\begin{flushleft}
@@ -164,7 +164,7 @@
 			\tool
 		\end{flushleft}
     
-    \profilesection{Relevant Courses}{0.7cm}\\
+    \profilesection{Relevant Courses}{0.5cm}\\
 %    \profilesection{ }{1.2cm}
     
     
