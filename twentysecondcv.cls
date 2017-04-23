@@ -173,7 +173,7 @@
 			\tutor
 		\end{flushleft}
 
-    \profilesection{Extra Curricular}{1.23cm}\\
+    \profilesection{Other Projects}{1.23cm}\\
 %    \profilesection{ }{1.2cm}
     
     
